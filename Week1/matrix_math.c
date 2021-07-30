@@ -6,11 +6,11 @@
 int main (void) {
     int size = get_int("Size of the square array: ");
 
-    char *matrixAString = get_string("First matrix, in format 'a,b;c;d':\n");
+    char *matrixAString = get_string("First matrix, in format 'a,b;c,d':\n");
     long A[size][size];
     m_parse(matrixAString, A, size);
 
-    char *matrixBString = get_string("Second matrix, in format 'a,b;c;d':\n");
+    char *matrixBString = get_string("Second matrix, in format 'a,b;c,d':\n");
     long B[size][size];
     m_parse(matrixBString, B, size);
 
